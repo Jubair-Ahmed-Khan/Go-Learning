@@ -12,8 +12,7 @@ type order struct {
 	createdAt time.Time
 }
 
-
-//constructor
+// constructor
 func newOrder(id string, amount float32, status string) *order {
 	// initial setup goes here ....
 	orderDetails := order{
@@ -54,10 +53,10 @@ func main() {
 
 	//only one instance of struct
 	language := struct {
-		name string
+		name   string
 		isGood bool
-	}{name: "Go",isGood: true}
+	}{"Go", true}
 
 	fmt.Println(language)
-	
+
 }
